@@ -1,0 +1,119 @@
+algoritmo "Busca2"
+var
+   nome:vetor[1..5] de caracter
+   idade:vetor [1..5] de caracter
+
+   i:inteiro
+
+   n:inteiro
+   opc: caracter
+   r: caracter
+   
+   f:caracter
+
+   // ------------------------------------------------
+
+procedimento menu()
+
+inicio
+escreval ("============================")
+   escreval ("CADASTRO|BUSCA|LISTA (1) * SAIR(2)")
+   escreval ("============================")
+   leia (opc)
+   enquanto  opc = "1" faca
+
+      cad()
+      list()
+      busca()
+   fimenquanto
+
+   se opc = "2" entao
+      sair()
+   fimse
+fimprocedimento
+
+//--------------------------------------------------
+
+procedimento cad()
+inicio
+
+
+   escreval ("============================")
+   escreval("CADASTRO")
+   escreval ()
+   para i de 1 ate 5 faca
+      escreval("  ")
+      escreval ("Registro - ",i)
+      leia(nome[i], idade[i])
+
+   fimpara
+   escreval()
+   escreval ("Término da entrada de dados")
+  fimprocedimento
+//-------------------------------------------
+
+procedimento list()
+
+inicio
+   escreval("===========================")
+   escreval ("LISTA")
+   escreval ("============================")
+   escreval("nome, idade")
+   para i de 1 ate  5 faca
+      escreval(nome[i], "-", idade[i])
+   fimpara
+
+
+fimprocedimento
+
+//-------------------------------------------
+
+procedimento busca()
+
+inicio
+
+
+   escreval ("============================")
+   escreval ("BUSQUE UM NOME:")
+   escreval ("============================")
+   leia(n)
+
+   se n = nome[i] entao
+      escreval ("Resultado da busca:", nome[i])
+      escreval ("Idade:","", idade[i])
+   senao
+      escreval("Registro não encontrado")
+   fimse
+
+   escreval("===============================")
+   menu()
+fimprocedimento
+
+// ------------------------------------------
+procedimento sair()
+
+inicio
+   limpatela
+
+
+fimprocedimento
+
+//-----------------------------------------------
+funcao t():caracter
+inicio
+
+se f = "s" entao
+retorne "Até logo"
+senao
+menu()
+fimse
+fimfuncao
+ //----------------------------------------------
+
+inicio
+
+menu()
+escreval("DESEJA SAIR? s/n")
+leia (f)
+escreval (t())
+fimalgoritmo
