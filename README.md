@@ -6,7 +6,7 @@
 #  Sobre o projeto
 
   
-Em Portugol, busca de resgistro básica.    
+Em Portugol, busca de resgistro básica. Com objetivo de treinar procedimentos.    
 
   
 #  Tecnologias utilizadas
