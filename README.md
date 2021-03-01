@@ -1,6 +1,4 @@
 # BuscaRegistro
-Em Portugol, busca de funcionário básica. 
-
 
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/bea3853/BuscaFunc/blob/main/LICENSE)
 
@@ -8,7 +6,7 @@ Em Portugol, busca de funcionário básica.
 #  Sobre o projeto
 
   
-Em Portugol, busca de funcionário básica.    
+Em Portugol, busca de resgistro básica.    
 
   
 #  Tecnologias utilizadas
